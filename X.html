@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Letter</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      color: rgb(0, 0, 0);
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: linear-gradient(90deg, #e0c3fc 0%, #8ec5fc 100%);
+    }
+
+    .x {
+      width: 600px;
+      height: auto;
+      margin: 100px auto;
+    }
+
+    .box {
+
+      position: relative;
+
+    }
+
+    .box .square {
+
+      position: absolute;
+
+      backdrop-filter: blur(5px);
+
+      box-shadow: 0 25px 45px rgb(0, 0, 0, 0.1);
+
+      border: 1px solid rgb(255, 255, 255, 0.5);
+
+      border-right: 1px solid rgb(255, 255, 255, 0.2);
+
+      border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+      background: rgb(255, 255, 255, 0.1);
+
+      border-radius: 10px;
+
+      animation: animate 10s linear infinite;
+
+      animation-delay: calc(-1s*var(--i));
+
+    }
+
+    /* 动画 */
+
+    @keyframes animate {
+
+      0%,
+      100% {
+
+        transform: translateY(-40px);
+
+      }
+
+      50% {
+
+        transform: translate(40px);
+
+      }
+
+    }
+
+    .box .square:nth-child(1) {
+
+      top: -50px;
+
+      right: -60px;
+
+      width: 100px;
+
+      height: 100px;
+
+    }
+
+    .box .square:nth-child(2) {
+
+      top: 150px;
+
+      left: -100px;
+
+      width: 120px;
+
+      height: 120px;
+
+      z-index: 2;
+
+    }
+
+    .box .square:nth-child(3) {
+
+      bottom: 50px;
+
+      right: -60px;
+
+      width: 80px;
+
+      height: 80px;
+
+      z-index: 2;
+
+    }
+
+    .box .square:nth-child(4) {
+
+      bottom: 150px;
+
+      left: -100px;
+
+      width: 80px;
+
+      height: 80px;
+
+    }
+
+    .box .square:nth-child(5) {
+
+      bottom: 550px;
+
+      left: -140px;
+
+      width: 100px;
+
+      height: 100px;
+
+    }
+
+    .box .square:nth-child(6) {
+
+      bottom: 800px;
+
+      right: -150px;
+
+      width: 70px;
+
+      height: 70px;
+
+    }
+
+    .box .square:nth-child(7) {
+
+      bottom: 1150px;
+
+      right: -100px;
+
+      width: 80px;
+
+      height: 80px;
+
+    }
+
+    .box .square:nth-child(8) {
+
+      bottom: 900px;
+
+      left: -140px;
+
+      width: 150px;
+
+      height: 150px;
+
+    }
+
+    .box .square:nth-child(9) {
+
+      bottom: 400px;
+
+      right: -100px;
+
+      width: 120px;
+
+      height: 120px;
+
+    }
+
+    .container {
+
+      position: relative;
+
+      width: 700px;
+
+      height: 1570px;
+
+      background: rgb(255, 255, 255, 0.1);
+
+      border-radius: 10px;
+
+      padding: 20px 28px;
+
+      justify-content: center;
+
+      align-items: center;
+
+      backdrop-filter: blur(5px);
+
+      box-shadow: 0 25px 45px rgb(0, 0, 0, 0.1);
+
+      border: 1px solid rgb(255, 255, 255, 0.5);
+
+      border-right: 1px solid rgb(255, 255, 255, 0.2);
+
+      border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+      line-height: 30px;
+    }
+
+    p {
+      text-indent: 2em;
+    }
+
+    .mid {
+      text-indent: 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    #colorano {
+      margin-top: 500px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+
+    <div class="box">
+      <div class="square" style="--i:0;"></div>
+      <div class="square" style="--i:1;"></div>
+      <div class="square" style="--i:2;"></div>
+      <div class="square" style="--i:3;"></div>
+      <div class="square" style="--i:4;"></div>
+      <div class="square" style="--i:5;"></div>
+      <div class="square" style="--i:6;"></div>
+      <div class="square" style="--i:7;"></div>
+      <div class="square" style="--i:8;"></div>
+      <div class="container">
+        <p>你好，很抱歉以这种形式和你沟通，不，应该是当方面的倾诉吧（笑）。我这个人不太会说话，所以在现实中根本不好意思向你搭话，
+          我和你也没有什么工作上的交集，就连之间的距离也是相差甚远，所以请原谅我用这样的形式告诉你我这几个月以来想要对你说的话，
+          再说一声，对不起。</p>
+        <p>网页是自己用以前学过的技术做成的，但不可否认的是，背景模板是借鉴的（笑），不过因为是临时紧急做的，希望你不嫌弃。
+          当你看到这些内容的时候，我已经不在这里工作了，就连离开的这个决定也是突然的。
+          人的一生并没有我想象中的那么自由呢。但是，至少在离开之前，我想要告诉你，我对你的心意。</p>
+        <p>读到这里你大概也察觉到了，我想对你说的是：
+        </p>
+        <p class="mid">汤兰同学，我喜欢你
+        </p>
+        <p>就是那么简简单单的八个文字和一个停顿。</p>
+        <p>很抱歉，我不知道你是否有男朋友，却又擅自说出那样的话。因为不了解你，接下来的话，都是基于我所见到的光景和我擅自的分析所得，
+          大概是和真实的你不同吧，希望你不要生气（笑）
+        </p>
+        <p>以前，恋爱是什么，这种问题我从来都没去思考过。一直以来的人生，仿佛过路人般平淡无奇，普通的出生，普通的上小学，
+          普通的迎来青春期，普通的在每个阶段结交几个一不见面就很少交流的朋友，普通的上了大学，普通的毕业，普通的来到陌生的城市，
+          普通的就业。我大概是个迟钝的人，没有察觉到生活中的小幸运，所以也就擅自地认为自己的人生很普通，自然也没有注意过其他人，
+          换句话说，像是一个自私的，只关注自己的人。但是，那一天的到来，结束了我所认为的普通的生活。那一天，我无意间看到了你的侧脸，
+          你只是在工作，只是在无聊地看着电脑前的用例，就是这么随处可见的场景，我却深深地记住了。
+          精致的侧脸和齐刘海十分搭配，冷静无瑕的眼神展现出异于常人的成熟。这是我当时的感受。
+          在大学的时候我经常看有关青春恋爱的轻小说，受其影响之下，我自己也写了一部二十几万字的小说，当然，因为没有什么作品经验，
+          我的文笔十分鲜嫩可口，在网站上也没什么阅读量（笑）。我所描绘的女主角，是一位温柔，如白雪一般纯洁无瑕的人。
+          那一天看到你的那一瞬间，就感觉仿佛她打破次元壁生动形象地活在了这个世间，因为我所描绘的她，大概也是我心中对一见钟情的人的拟态。
+        </p>
+        <p>此后，只要是有见到你的机会，我的目光就会不由自主地往你的方向投射过去，时而看到你认真地戳着手机屏幕，
+          时而看到你跑到别人那边请教问题，时而看到你抱着抱枕看着蜡笔小新，时而看到你堆叠地放好手机坐等下班。
+          上班的时候，我总是希望能和你在楼下碰面，然后一起乘电梯。生日那天早上我希望能碰到你，结果真的看到你也在等电梯，
+          那大概是我最满足的一次生日愿望了。下班的时候，我总是坐在位置上用余光看着门口，希望能看到你下班。
+          有一天我等到7点的时候看到你要出门了，就打算拿着背包也一起下班了，不过你很快就回来了，原来是去拿晚饭，
+          我这才意识到你好像没拿背包（笑）。曾有幸参与过你们部门的项目，那天早上看到被其他部门拉群的时候我还有点烦恼，
+          去拿设备的时候正好你也在同一个柜子找，回到位子上看了成员名字，突然注意到你的那一瞬间我还有些懵，大概两秒后才想起来那是你的名字，
+          突然就有干劲了。偶尔和你对上视线时心里会有痒痒的感觉（虽然只有一次），偶尔和你在同一个柜子找设备时会感到紧张（虽然也只有一次），
+          偶尔和你一起晚下班看到你一个走夜路时会感到不安（虽然也只有一次），偶尔和你享用着同一种饮品时会感到奇迹（虽然还是只有一次）。
+          见到你就会有好心情，见不到你就会有些失落，你的一举一动似乎会拨弄我的心弦，这是以前从来都没拥有过的感觉，
+          所以毫无疑问的，这大概就是恋爱吧。
+        </p>
+        <p>好了，如果读到这里的话，不知道你的心情如何呢，是激动、难以置信，还是不安、无聊至极呢（笑）。
+          在喜欢你的时间里，我眼中的一切都变得如此生动，不知不觉在脑海之中你的身影已经挥之不去，与你四目相对之时，
+          与你共处一个空间之时，与你一同下班之时，与你共享同一种饮品之时，即使只有那一瞬间，但是那份无法忘记的悸动，
+          是如此地鲜明地刻在心中。谢谢你的出现，让我感受到这样的情感，选择到这里工作真是太好了。
+        </p>
+        <p>最后，看完这些的你，希望不要放在心上，希望不要知道我是谁，希望不要联络我。
+          你可以认为我在逃避，我已经没有继续喜欢你的资格了。人生虽然不像小说一样拥有完美的结局，
+          但是这片刻的幸福也已经能让人十分眷恋了。谢谢你看完这些内容，衷心希望你以后的日子开心快乐。哦，对了，走路的时候别老看手机，小心摔倒哦。
+        </p>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
